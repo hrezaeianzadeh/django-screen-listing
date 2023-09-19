@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y postgresql-client
 
 # install python packages
-RUN apt-get install wget gcc python3 python3-pip python3-psycopg2 -y \
+RUN apt-get install python3 python3-pip python3-psycopg2 -y \
     && apt-get autoremove -y \
     && apt-get clean -y 
 
